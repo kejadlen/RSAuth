@@ -104,9 +104,9 @@
 		DE04DF302470AF3B0035C8D8 /* RSAuth WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				DE04DF312470AF3B0035C8D8 /* Interface.storyboard */,
-				DE04DF342470AF3C0035C8D8 /* Assets.xcassets */,
 				DE04DF362470AF3C0035C8D8 /* Info.plist */,
+				DE04DF342470AF3C0035C8D8 /* Assets.xcassets */,
+				DE04DF312470AF3B0035C8D8 /* Interface.storyboard */,
 			);
 			path = "RSAuth WatchKit App";
 			sourceTree = "<group>";
@@ -114,10 +114,10 @@
 		DE04DF3F2470AF3D0035C8D8 /* RSAuth WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */,
-				DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */,
-				DE04DF442470AF3D0035C8D8 /* Assets.xcassets */,
 				DE04DF462470AF3D0035C8D8 /* Info.plist */,
+				DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */,
+				DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */,
+				DE04DF442470AF3D0035C8D8 /* Assets.xcassets */,
 			);
 			path = "RSAuth WatchKit Extension";
 			sourceTree = "<group>";
