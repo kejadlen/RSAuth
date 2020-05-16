@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE04DF2D2470AF3B0035C8D8 /* RSAuth WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DE04DF2C2470AF3B0035C8D8 /* RSAuth WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE04DF332470AF3B0035C8D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF312470AF3B0035C8D8 /* Interface.storyboard */; };
+		DE04DF352470AF3C0035C8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF342470AF3C0035C8D8 /* Assets.xcassets */; };
+		DE04DF3C2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE04DF412470AF3D0035C8D8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */; };
+		DE04DF432470AF3D0035C8D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */; };
+		DE04DF452470AF3D0035C8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF442470AF3D0035C8D8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE04DF2E2470AF3B0035C8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE04DF222470AF3B0035C8D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE04DF2B2470AF3B0035C8D8;
+			remoteInfo = "RSAuth WatchKit App";
+		};
+		DE04DF3D2470AF3D0035C8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE04DF222470AF3B0035C8D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE04DF3A2470AF3D0035C8D8;
+			remoteInfo = "RSAuth WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE04DF4C2470AF3D0035C8D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE04DF3C2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE04DF502470AF3D0035C8D8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DE04DF2D2470AF3B0035C8D8 /* RSAuth WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE04DF282470AF3B0035C8D8 /* RSAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE04DF2C2470AF3B0035C8D8 /* RSAuth WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSAuth WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE04DF322470AF3B0035C8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DE04DF342470AF3C0035C8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE04DF362470AF3C0035C8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RSAuth WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DE04DF442470AF3D0035C8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE04DF462470AF3D0035C8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE04DF382470AF3D0035C8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE04DF212470AF3B0035C8D8 = {
+			isa = PBXGroup;
+			children = (
+				DE04DF302470AF3B0035C8D8 /* RSAuth WatchKit App */,
+				DE04DF3F2470AF3D0035C8D8 /* RSAuth WatchKit Extension */,
+				DE04DF292470AF3B0035C8D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE04DF292470AF3B0035C8D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE04DF282470AF3B0035C8D8 /* RSAuth.app */,
+				DE04DF2C2470AF3B0035C8D8 /* RSAuth WatchKit App.app */,
+				DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE04DF302470AF3B0035C8D8 /* RSAuth WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DE04DF312470AF3B0035C8D8 /* Interface.storyboard */,
+				DE04DF342470AF3C0035C8D8 /* Assets.xcassets */,
+				DE04DF362470AF3C0035C8D8 /* Info.plist */,
+			);
+			path = "RSAuth WatchKit App";
+			sourceTree = "<group>";
+		};
+		DE04DF3F2470AF3D0035C8D8 /* RSAuth WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */,
+				DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */,
+				DE04DF442470AF3D0035C8D8 /* Assets.xcassets */,
+				DE04DF462470AF3D0035C8D8 /* Info.plist */,
+			);
+			path = "RSAuth WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE04DF272470AF3B0035C8D8 /* RSAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE04DF512470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth" */;
+			buildPhases = (
+				DE04DF262470AF3B0035C8D8 /* Resources */,
+				DE04DF502470AF3D0035C8D8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE04DF2F2470AF3B0035C8D8 /* PBXTargetDependency */,
+			);
+			name = RSAuth;
+			productName = RSAuth;
+			productReference = DE04DF282470AF3B0035C8D8 /* RSAuth.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DE04DF2B2470AF3B0035C8D8 /* RSAuth WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE04DF4D2470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth WatchKit App" */;
+			buildPhases = (
+				DE04DF2A2470AF3B0035C8D8 /* Resources */,
+				DE04DF4C2470AF3D0035C8D8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE04DF3E2470AF3D0035C8D8 /* PBXTargetDependency */,
+			);
+			name = "RSAuth WatchKit App";
+			productName = "RSAuth WatchKit App";
+			productReference = DE04DF2C2470AF3B0035C8D8 /* RSAuth WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DE04DF3A2470AF3D0035C8D8 /* RSAuth WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE04DF492470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth WatchKit Extension" */;
+			buildPhases = (
+				DE04DF372470AF3D0035C8D8 /* Sources */,
+				DE04DF382470AF3D0035C8D8 /* Frameworks */,
+				DE04DF392470AF3D0035C8D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSAuth WatchKit Extension";
+			productName = "RSAuth WatchKit Extension";
+			productReference = DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE04DF222470AF3B0035C8D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Arbitrary Definitions";
+				TargetAttributes = {
+					DE04DF272470AF3B0035C8D8 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					DE04DF2B2470AF3B0035C8D8 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					DE04DF3A2470AF3D0035C8D8 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = DE04DF252470AF3B0035C8D8 /* Build configuration list for PBXProject "RSAuth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE04DF212470AF3B0035C8D8;
+			productRefGroup = DE04DF292470AF3B0035C8D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE04DF272470AF3B0035C8D8 /* RSAuth */,
+				DE04DF2B2470AF3B0035C8D8 /* RSAuth WatchKit App */,
+				DE04DF3A2470AF3D0035C8D8 /* RSAuth WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE04DF262470AF3B0035C8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE04DF2A2470AF3B0035C8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04DF352470AF3C0035C8D8 /* Assets.xcassets in Resources */,
+				DE04DF332470AF3B0035C8D8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE04DF392470AF3D0035C8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04DF452470AF3D0035C8D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE04DF372470AF3D0035C8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04DF432470AF3D0035C8D8 /* ExtensionDelegate.swift in Sources */,
+				DE04DF412470AF3D0035C8D8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE04DF2F2470AF3B0035C8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE04DF2B2470AF3B0035C8D8 /* RSAuth WatchKit App */;
+			targetProxy = DE04DF2E2470AF3B0035C8D8 /* PBXContainerItemProxy */;
+		};
+		DE04DF3E2470AF3D0035C8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE04DF3A2470AF3D0035C8D8 /* RSAuth WatchKit Extension */;
+			targetProxy = DE04DF3D2470AF3D0035C8D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE04DF312470AF3B0035C8D8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE04DF322470AF3B0035C8D8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE04DF472470AF3D0035C8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE04DF482470AF3D0035C8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE04DF4A2470AF3D0035C8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				INFOPLIST_FILE = "RSAuth WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DE04DF4B2470AF3D0035C8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				INFOPLIST_FILE = "RSAuth WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DE04DF4E2470AF3D0035C8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				IBSC_MODULE = RSAuth_WatchKit_Extension;
+				INFOPLIST_FILE = "RSAuth WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DE04DF4F2470AF3D0035C8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				IBSC_MODULE = RSAuth_WatchKit_Extension;
+				INFOPLIST_FILE = "RSAuth WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DE04DF522470AF3D0035C8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DE04DF532470AF3D0035C8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H873NLKBJ4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE04DF252470AF3B0035C8D8 /* Build configuration list for PBXProject "RSAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04DF472470AF3D0035C8D8 /* Debug */,
+				DE04DF482470AF3D0035C8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE04DF492470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04DF4A2470AF3D0035C8D8 /* Debug */,
+				DE04DF4B2470AF3D0035C8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE04DF4D2470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04DF4E2470AF3D0035C8D8 /* Debug */,
+				DE04DF4F2470AF3D0035C8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE04DF512470AF3D0035C8D8 /* Build configuration list for PBXNativeTarget "RSAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04DF522470AF3D0035C8D8 /* Debug */,
+				DE04DF532470AF3D0035C8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE04DF222470AF3B0035C8D8 /* Project object */;
+}
