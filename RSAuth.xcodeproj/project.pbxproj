@@ -11,9 +11,12 @@
 		DE04DF332470AF3B0035C8D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF312470AF3B0035C8D8 /* Interface.storyboard */; };
 		DE04DF352470AF3C0035C8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF342470AF3C0035C8D8 /* Assets.xcassets */; };
 		DE04DF3C2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DE04DF412470AF3D0035C8D8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */; };
+		DE04DF412470AF3D0035C8D8 /* TokenCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF402470AF3D0035C8D8 /* TokenCodeController.swift */; };
 		DE04DF432470AF3D0035C8D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */; };
 		DE04DF452470AF3D0035C8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE04DF442470AF3D0035C8D8 /* Assets.xcassets */; };
+		DE04DF552470B00A0035C8D8 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04DF542470B00A0035C8D8 /* Token.swift */; };
+		DEAD3FD72470B18700EF3112 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD3FD62470B18700EF3112 /* Keychain.swift */; };
+		DEAD3FD92470E36F00EF3112 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD3FD82470E36F00EF3112 /* ConfigController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +68,13 @@
 		DE04DF342470AF3C0035C8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE04DF362470AF3C0035C8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE04DF3B2470AF3D0035C8D8 /* RSAuth WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RSAuth WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DE04DF402470AF3D0035C8D8 /* TokenCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCodeController.swift; sourceTree = "<group>"; };
 		DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		DE04DF442470AF3D0035C8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE04DF462470AF3D0035C8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE04DF542470B00A0035C8D8 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		DEAD3FD62470B18700EF3112 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		DEAD3FD82470E36F00EF3112 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				DE04DF462470AF3D0035C8D8 /* Info.plist */,
+				DEAD3FD82470E36F00EF3112 /* ConfigController.swift */,
 				DE04DF422470AF3D0035C8D8 /* ExtensionDelegate.swift */,
-				DE04DF402470AF3D0035C8D8 /* InterfaceController.swift */,
+				DEAD3FD62470B18700EF3112 /* Keychain.swift */,
+				DE04DF542470B00A0035C8D8 /* Token.swift */,
+				DE04DF402470AF3D0035C8D8 /* TokenCodeController.swift */,
 				DE04DF442470AF3D0035C8D8 /* Assets.xcassets */,
 			);
 			path = "RSAuth WatchKit Extension";
@@ -249,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE04DF552470B00A0035C8D8 /* Token.swift in Sources */,
+				DEAD3FD92470E36F00EF3112 /* ConfigController.swift in Sources */,
+				DEAD3FD72470B18700EF3112 /* Keychain.swift in Sources */,
 				DE04DF432470AF3D0035C8D8 /* ExtensionDelegate.swift in Sources */,
-				DE04DF412470AF3D0035C8D8 /* InterfaceController.swift in Sources */,
+				DE04DF412470AF3D0035C8D8 /* TokenCodeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,12 +490,14 @@
 		DE04DF522470AF3D0035C8D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H873NLKBJ4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -491,12 +505,14 @@
 		DE04DF532470AF3D0035C8D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H873NLKBJ4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kejadlen.RSAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
