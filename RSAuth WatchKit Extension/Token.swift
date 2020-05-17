@@ -25,16 +25,8 @@ struct Serial {
     }
 
     init?(string: String) {
-        guard var n = UInt64(string) else { return nil }
+        guard let data = UInt64(string).map({ $0.bcd }) else { return nil }
 
-        var data = Data()
-        while n > 0 {
-            let (q, r) = n.quotientAndRemainder(dividingBy: 100)
-            let (hundreds, tens) = r.quotientAndRemainder(dividingBy: 10)
-            data.append(UInt8((hundreds << 4) | tens))
-            n = q
-        }
-        data.reverse()
         self.data = data
     }
 }
@@ -70,8 +62,8 @@ let fldNumsecondsMask: UInt16 = 0b11 << fldNumsecondsShift
 class Token {
     let serial: Data
     let seed: Data
-    let pin = Data(count: 8)
-    let flags: UInt = 17369
+    let pin: Data
+    let flags: UInt
 
     let currentDate: () -> Date
 
@@ -95,9 +87,17 @@ class Token {
         }
     }
 
-    init?(serial: Serial, seed: Seed, currentDate: @escaping () -> Date = { Date() }) {
+    init(
+        serial: Serial,
+        seed: Seed,
+        pin: Data = Data(count: 8),
+        flags: UInt = 17369,
+        currentDate: @escaping () -> Date = { Date() }
+    ) {
         self.serial = serial.data
         self.seed = seed.data
+        self.pin = pin
+        self.flags = flags
 
         self.currentDate = currentDate
     }
@@ -216,7 +216,9 @@ class Token {
 
 extension UnsignedInteger {
     var bcd: Data {
-        var d: [UInt8] = []
+        guard self > 0 else { return Data([0]) }
+
+        var d = Data()
         var n = self
         while n > 0 {
             let (q, r) = n.quotientAndRemainder(dividingBy: 100)
@@ -224,7 +226,8 @@ extension UnsignedInteger {
             d.append(UInt8((hundreds << 4) | tens))
             n = q
         }
-        return Data(d.isEmpty ? [0] : d.reversed())
+        d.reverse()
+        return d
     }
 }
 

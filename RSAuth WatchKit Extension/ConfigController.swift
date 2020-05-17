@@ -31,6 +31,8 @@ struct ConfigView: View {
 
     @State private var serial: String = ""
     @State private var seed: String = ""
+    @State private var pin: String = ""
+    @State private var flags: String = ""
 
     var body: some View {
         VStack {
